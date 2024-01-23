@@ -75,7 +75,7 @@ https://algoscan.app/block/32000000
 
 For algoscan, this uses [declarativeNetRequest](https://developer.chrome.com/docs/extensions/reference/api/declarativeNetRequest). Defined in `rules_algoscan.json`.
 
-The same method is programmed for AlgoExplorer (`rules_algoexplorer.json`), however the service worker deployed to algoexplorer.io interferes with this redirection method, so a secondary redirection method is injected to algoexplorer.io pages (`algoexplorer.js`).
+The same method is programmed for AlgoExplorer (`rules_algoexplorer.json`), however the service worker deployed to algoexplorer.io interferes with this redirection method, so a secondary redirection method is injected into algoexplorer.io pages (`algoexplorer.js`).
 
 ## Firefox version
 
