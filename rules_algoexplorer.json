@@ -1,0 +1,30 @@
+[
+    {
+        "id": 4,
+        "priority": 4,
+        "action": {
+            "type": "redirect",
+            "redirect": {
+                "regexSubstitution": "https://allo.info/\\1/\\2"
+            }
+        },
+        "condition": {
+            "regexFilter": "^https?://algoexplorer.io/(tx|asset|application|block)/([%-A-Za-z0-9+/=]+)",
+            "resourceTypes": [ "main_frame" ]
+        }
+    },
+    {
+        "id": 5,
+        "priority": 5,
+        "action": {
+            "type": "redirect",
+            "redirect": {
+                "regexSubstitution": "https://allo.info/\\1"
+            }
+        },
+        "condition": {
+            "regexFilter": "https://algoexplorer.io/(.*)",
+            "resourceTypes": [ "main_frame", "sub_frame" ]
+        }
+    }
+]

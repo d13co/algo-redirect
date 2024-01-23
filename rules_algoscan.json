@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "priority": 1,
+        "action": {
+            "type": "redirect",
+            "redirect": {
+                "regexSubstitution": "https://allo.info/\\1/\\2"
+            }
+        },
+        "condition": {
+            "regexFilter": "^https?:\/\/algoscan.app\/(tx|block|asset)\/([%-A-Za-z0-9+/=]+)",
+            "resourceTypes": [ "main_frame" ]
+        }
+    },
+    {
+        "id": 2,
+        "priority": 2,
+        "action": {
+            "type": "redirect",
+            "redirect": {
+                "regexSubstitution": "https://allo.info/account/\\1"
+            }
+        },
+        "condition": {
+            "regexFilter": "^https?://algoscan.app/address/([A-Za-z2-7]+)",
+            "resourceTypes": [ "main_frame" ]
+        }
+    },
+    {
+        "id": 3,
+        "priority": 3,
+        "action": {
+            "type": "redirect",
+            "redirect": {
+                "regexSubstitution": "https://allo.info/application/\\1"
+            }
+        },
+        "condition": {
+            "regexFilter": "^https?://algoscan.app/app/([0-9]+)",
+            "resourceTypes": [ "main_frame" ]
+        }
+    }
+]
