@@ -1,2 +1,6 @@
+node_modules/
 algo-redirect-chrome-*.zip
 banner.*
+.web-extension-id
+.secret*
+web-ext-artifacts
